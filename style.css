@@ -660,9 +660,9 @@ footer div{
         background-color: white;
         border: 1px solid black;
         box-shadow: 5px 1px 18px black;
-        /* right:-200px; */
         left:100vw;
         top:19px;
+        display: hidden;
     }
 
     [for="menu"] {
@@ -672,7 +672,13 @@ footer div{
     }
 
     #menu:checked + ul{
+        width:60px;
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         background-color: var(--back-bg);
+        top: 19px;
         left:76vw;
         padding:10px;
         transition:all 0.6s;
