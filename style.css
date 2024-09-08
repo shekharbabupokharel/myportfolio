@@ -646,12 +646,13 @@ footer div{
     .nav .area{
         display: flex;
         justify-content: space-between;
+        padding-right: 10px;
     }
 
 
 
     .area ul{
-        width:40px;
+        width:60px;
         position: absolute;
         flex-direction: column;
         justify-content: center;
@@ -673,7 +674,9 @@ footer div{
     #menu:checked + ul{
         background-color: var(--back-bg);
         left:76vw;
+        padding:10px;
         transition:all 0.6s;
+        border: 1px solid var(--border-color);
     }
 
     body{
